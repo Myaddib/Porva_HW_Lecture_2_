@@ -14,8 +14,8 @@ public class Main {
         //      число та перше парне число та міняємо тільки їх містами.
 
         int[] big_array = new int[25];
-        int even_number=0;
-        int odd_number=0;
+        int even_number = 0;
+        int odd_number = 0;
         int even_index = 0;
         int odd_index = 0;
         Random random = new Random();
@@ -25,9 +25,9 @@ public class Main {
         for (int i = 0; i < big_array.length; i++) {
 
             big_array[i] = random.nextInt(1000);
-            ;
+
         }
-        System.out.println("Original  "+Arrays.toString(big_array));
+        System.out.println("Original  " + Arrays.toString(big_array));
 
         for (int i = 0; i < big_array.length; i++) {
             if (big_array[i] % 2 == 0 && marka_even == 1) {
@@ -48,6 +48,6 @@ public class Main {
                 big_array[odd_index] = even_number;
             }
         }
-        System.out.println("Changed   "+Arrays.toString(big_array));
+        System.out.println("Changed   " + Arrays.toString(big_array));
     }
 }
