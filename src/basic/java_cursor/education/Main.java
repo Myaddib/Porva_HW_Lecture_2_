@@ -23,9 +23,7 @@ public class Main {
         int marka_odd = 1;
 
         for (int i = 0; i < big_array.length; i++) {
-
             big_array[i] = random.nextInt(1000);
-
         }
         System.out.println("Original  " + Arrays.toString(big_array));
 
@@ -34,12 +32,10 @@ public class Main {
                 marka_even = 0;
                 even_number = big_array[i];
                 even_index = i;
-
             } else if (marka_odd == 1) {
                 marka_odd = 0;
                 odd_number = big_array[i];
                 odd_index = i;
-
             }
             while (marka_even == 0 && marka_odd == 0) {
                 marka_even = 1;
